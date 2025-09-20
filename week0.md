@@ -1,0 +1,11 @@
+Welcome to Week 0 of the RISC-V Reference SoC Tapeout Program by VLSI System Design (VSD)! Here are the tasks completed this week:
+
+1. Created the GitHub repository to track progress.
+
+2. Installed and set up Yosys, Iverilog, GTKWave, NGSpice, and Magic on Ubuntu 24.04.3 LTS.
+
+3. Installed essential tools like Python3, Docker, Make, and Git.
+
+4. Confirmed all tools were installed and working properly.
+
+5. Added installation screenshots to the repository.
