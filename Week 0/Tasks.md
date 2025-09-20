@@ -19,13 +19,19 @@ Welcome to **Week 0** of the **RISC-V Reference SoC Tapeout Program** by **VLSI 
 
 The latest version of Oracle Virtual Machine was installed to replicate the Ubuntu interface, with the following specifications chosen to balance performance and resource efficiency for smooth simulation and compilation:
 
-Operating System: Ubuntu 24.04+
+**Operating System:** Ubuntu 24.04+
 
-RAM: 6GB
+**RAM:** 6GB
 
-Storage: 50GB HDD
+**vCPUs:** 4
 
-vCPUs: 4
+<img width="709" height="369" alt="Oracle VM VirtualBox Manager 20-09-2025 19_28_26" src="https://github.com/user-attachments/assets/0e6c3b35-3f37-4a42-8d0c-e1e170ec72ef" />
+
+
+**Storage:** 50GB HDD
+
+<img width="709" height="369" alt="Oracle VM VirtualBox Manager 20-09-2025 19_28_50" src="https://github.com/user-attachments/assets/836fe6cb-c2a3-481a-8a5b-15f398c7aaba" />
+
 
 ## Installation And Verification Of The Tools:
 
