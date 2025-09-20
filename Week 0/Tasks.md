@@ -32,7 +32,7 @@ vCPUs: 4
 The following software tools were installed to support the different phases of hardware design, including synthesis, simulation, waveform analysis, circuit evaluation, and layout creation:
 
 
-### 1. Yosys
+### 1. Yosys:
 ->  Open-source software for synthesizing and optimizing Verilog RTL designs. It transforms high-level hardware descriptions into gate-level netlists for digital chip implementation.
 
 ```
@@ -48,35 +48,47 @@ $ make config-gcc
 $ make
 $ sudo make install 
 ```
-### Yosys - Setup Confirmation
+### Yosys - Setup Confirmation:
 
-### 2. Iverilog
+<img width="816" height="340" alt="Yosys" src="https://github.com/user-attachments/assets/11e89ee7-1a5c-48cb-abc5-395f33b5cfe1" />
+
+
+### 2. Iverilog:
 -> A widely-used open-source simulator that compiles and runs Verilog code, helping verify digital designs through simulation before hardware implementation.
 ```
 $ sudo apt-get update
 $ sudo apt-get install iverilog
 ```
-### Iverilog - Setup Confirmation
+### Iverilog - Setup Confirmation:
 
-### 3. GTKWave
+<img width="815" height="388" alt="Iverilog" src="https://github.com/user-attachments/assets/fff6bb51-7d30-4147-ad47-527af6d6cd36" />
+
+
+### 3. GTKWave:
 
 -> A graphical waveform viewer that allows detailed visualization and analysis of simulation output, aiding in debugging and verification of digital signals.
 ```
 $ sudo apt update
 $ sudo apt install gtkwave
 ```
-### GTKWave - Setup Confirmation
+### GTKWave - Setup Confirmation:
 
-### 4. Ngspice
+<img width="1280" height="800" alt="gtkwave" src="https://github.com/user-attachments/assets/f97b08d7-a2b0-4bcd-b305-834276bf57cc" />
+
+
+### 4. Ngspice:
 -> An advanced circuit simulator that performs detailed analog and mixed-signal analysis, essential for validating circuit behavior and performance.
 
 ```
 $ sudo apt update
 $ sudo apt install ngspice
 ```
-### Ngspice - Setup Confirmation
+### Ngspice - Setup Confirmation:
 
-### 5. Magic VLSI
+<img width="815" height="360" alt="ngspice" src="https://github.com/user-attachments/assets/227c3f9a-f1be-45f1-9250-248af321dc84" />
+
+
+### 5. Magic VLSI:
 
 -> An interactive tool used for designing, editing, and verifying physical integrated circuit layouts, facilitating the translation from design to manufacturable chip structures.
 
@@ -96,9 +108,12 @@ $ ./configure
 $ make
 $ sudo make install
 ```
-### Magic VLSI - Setup Confirmation
+### Magic VLSI - Setup Confirmation:
 
-### 6. OpenLane and Docker
+<img width="1280" height="800" alt="magic vlsi" src="https://github.com/user-attachments/assets/37fdfd49-9698-4a4b-964e-f4763d9b9283" />
+
+
+### 6. OpenLane and Docker:
 -> OpenLane is an automated open-source ASIC design flow for creating chip layouts, and Docker provides a containerized environment to run OpenLane smoothly and consistently across different systems.
 
 ```
@@ -123,7 +138,12 @@ $ sudo reboot
 
 $ docker run hello-world
 ```
-### Version Check
+### Docker - Setup Confirmation:
+
+<img width="1280" height="800" alt="docker" src="https://github.com/user-attachments/assets/5846f140-69b4-4da6-9cfa-d6155ced0da9" />
+
+
+### Version Check:
 ```
 $ git --version
 $ docker --version
@@ -131,10 +151,15 @@ $ python3 --version
 $ python3 -m pip --version
 $ make --version
 ```
+<img width="820" height="443" alt="versions1" src="https://github.com/user-attachments/assets/a5c8b722-09b8-4312-96f8-bc49606568a7" />
+
 
 ```
 $ python3 -m venv -h 
 ```
+
+<img width="1280" height="800" alt="versions2" src="https://github.com/user-attachments/assets/8a3f8749-d09f-46f4-9a5f-e75914379080" />
+
 
 ## Installation Summary
 
