@@ -15,7 +15,7 @@ Welcome to **Week 0** of the **RISC-V Reference SoC Tapeout Program** by **VLSI 
 
 5.Added installation screenshots to the repository.
 
-## Virtual Machine (VM) Specifications:
+## 💻 Virtual Machine (VM) Specifications:
 
 The latest version of Oracle Virtual Machine was installed to replicate the Ubuntu interface, with the following specifications chosen to balance performance and resource efficiency for smooth simulation and compilation:
 
@@ -33,7 +33,7 @@ The latest version of Oracle Virtual Machine was installed to replicate the Ubun
 <img width="709" height="369" alt="Oracle VM VirtualBox Manager 20-09-2025 19_28_50" src="https://github.com/user-attachments/assets/836fe6cb-c2a3-481a-8a5b-15f398c7aaba" />
 
 
-## Installation And Verification Of The Tools:
+## 📥 Installation And Verification Of The Tools:
 
 The following software tools were installed to support the different phases of hardware design, including synthesis, simulation, waveform analysis, circuit evaluation, and layout creation:
 
@@ -167,7 +167,7 @@ $ python3 -m venv -h
 <img width="1280" height="800" alt="versions2" src="https://github.com/user-attachments/assets/8a3f8749-d09f-46f4-9a5f-e75914379080" />
 
 
-## Installation Summary
+## 📜 Installation Summary
 
  **Yosys - Complete (✔️)**
 
@@ -184,4 +184,4 @@ $ python3 -m venv -h
  **Docker - Complete (✔️)**
 
 
-**With all necessary tools successfully installed and verified, the environment is now fully set up and ready for efficient development and testing.**
+**With all necessary tools successfully installed and verified, the environment is now fully set up and ready for efficient development and testing.**  🚀 📈 
