@@ -16,6 +16,8 @@ The Key Program Highlights are 🔑 :
 
 6.Contribution to strengthening India’s semiconductor ecosystem and technology leadership 🌱
 
-Kindly click on the folder corresponding to the week whose contents you wish to view. 💡
+Kindly click on the folder corresponding to the week whose contents you wish to view: 💡
+
+1. [Week 0](https://github.com/SaiAkhilCheruvu/RISC-V_Reference_SoC_Tapeout_Program_by_VSD/blob/main/Week%200/Tasks.md)
 
 Thank you [VLSI System Design](https://www.vlsisystemdesign.com/) for providing this wonderful opportunity. I'm very grateful for the chance to learn and grow through this program.
