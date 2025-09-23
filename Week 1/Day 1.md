@@ -15,6 +15,10 @@ A design refers to the Verilog code or a collection of Verilog codes created to 
 
 A testbench is a setup that applies stimulus (test vectors) to the design in order to verify and check its functionality.
 
-
+image
 
 This diagram shows the testbench setup with stimulus generation, design under test, and output observation. The design has primary inputs and outputs, while the testbench itself does not.
+
+## What is a Simulator?
+
+A simulator is a tool used to check if the RTL design adheres to the specification by simulating the behavior of the design.
