@@ -199,6 +199,32 @@ Faster cells have wider transistors that can charge and discharge load capacitan
 ## Yosys Logic Synthesis
 
 
+Yosys logic synthesis translates Verilog code into a gate-level circuit using a specified standard cell library, enabling practical hardware implementation and analysis. To perform Yosys Synthesis:
 
+1. Start Yosys:
+
+   ```
+   yosys
+   ```
+2. Inside Yosys, read the standard    cell library:
+
+   ```
+   read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   ```
+   
+3. Read your Verilog design file:
+
+   ```
+   read_verilog good_mux.v
+   ```
+
+4. Specify the top model to    synthesize:
+
+   ```
+   synth -top good_mux
+
+   ```
+
+5. 
 
 
