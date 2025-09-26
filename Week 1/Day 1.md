@@ -225,6 +225,30 @@ Yosys logic synthesis translates Verilog code into a gate-level circuit using a 
 
    ```
 
-5. 
+5. Run technology mapping with your liberty file:
 
+   ```
+   abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   ```
 
+6. Visualize the synthesized logic:
+
+   ```
+   show
+   ```
+
+<img width="1280" height="800" alt="s" src="https://github.com/user-attachments/assets/0f2dab51-a5c2-4ac3-a0f1-7417b648fe98" />
+
+## Recap
+
+-> Learned the basics of Verilog HDL, including module structure and testbench creation.
+
+-> Simulated and verified digital designs using Icarus Verilog and GTKWave.
+
+-> Explored the role of standard cell libraries (.lib files) and why they offer different gate "flavors" for speed, power, and area optimization.
+
+-> Understood key timing concepts: propagation delay, combinational delay, setup time, and hold time.
+
+-> Discussed the need for both fast and slow cells in digital design to balance performance and efficiency.
+
+-> Got introduced to Yosys logic synthesis and practiced the workflow for converting Verilog code to gate-level netlists.
