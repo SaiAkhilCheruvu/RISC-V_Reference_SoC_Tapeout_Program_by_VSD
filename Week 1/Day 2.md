@@ -16,6 +16,8 @@ To open and view the tech library file ```sky130_fd_sc_hd__tt_025C_1v80.lib``` u
 ```
 gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
+<img width="1280" height="800" alt="Screenshot from 2025-09-27 08-09-49" src="https://github.com/user-attachments/assets/920ab074-eca7-4274-8db0-b881a8fd81c5" />
+
 
 This command opens the liberty (.lib) file in the text editor gvim, allowing you to inspect timing, power, and structural characterization data of standard cells used in the Sky130 process design kit for synthesis and analysis.
 
