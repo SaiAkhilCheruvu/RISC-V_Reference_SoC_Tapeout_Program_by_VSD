@@ -20,4 +20,6 @@ Kindly click on the folder corresponding to the week whose contents you wish to 
 
 1. [Week 0](https://github.com/SaiAkhilCheruvu/RISC-V_Reference_SoC_Tapeout_Program_by_VSD/blob/main/Week%200/Tasks.md)
 
+2. [Week 1](https://github.com/SaiAkhilCheruvu/RISC-V_Reference_SoC_Tapeout_Program_by_VSD/tree/main/Week%201)
+
 Thank you [VLSI System Design](https://www.vlsisystemdesign.com/) for providing this wonderful opportunity. I'm very grateful for the chance to learn and grow through this program.
