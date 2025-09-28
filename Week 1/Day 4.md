@@ -24,5 +24,55 @@ It is performed after synthesis, before place-and-route, to validate post-synthe
 - Timing-aware GLS: Includes timing delays annotated from Standard Delay Format (SDF) files to check actual timing and detect setup/hold violations and glitches.
 
 
+## Synthesis-Simulation Mismatch
+
+A synthesis-simulation mismatch occurs when the behavior seen in RTL simulation does not match the results from gate-level simulation or actual hardware. Common causes include:
+
+- **Non-synthesizable code:** Using delays, initial blocks, or other constructs that synthesis tools ignore.
+
+- **Ambiguous or incomplete logic:** Missing else branches or improper sensitivity lists can lead to unintended latches or incorrect hardware.
+
+- **Tool interpretation differences:** Simulation and synthesis tools may handle ambiguous RTL differently.
+
+
+## Blocking And Non-Blocking Statements In Verilog
+
+### 🔹 Blocking Assignments (=)
+
+#### How they work:
+
+- Statements execute sequentially inside the procedural block.
+
+- The left-hand side (LHS) is updated immediately before the next statement runs.
+
+- Used mostly for combinational logic descriptions.
+
+verilog
+always @(*) begin
+  y = a & b;      // y gets the value of a AND b immediately
+  z = y | c;      // z uses the updated value of y
+end
+
+Another example in a clocked block:
+
+verilog
+always @(posedge clk) begin
+  b = a;
+  c = b;
+end
+
+Here, c will get the value of a right away, because each assignment happens in order.
+Non-Blocking Assignment Example (<=)
+
+Non-blocking assignments schedule updates to happen at the end of the time step, allowing parallel updates. This is best for sequential logic.
+
+verilog
+always @(posedge clk) begin
+  q1 <= d;
+  q2 <= q1;
+  q3 <= q2;
+end
+
+In this example, the value of d will propagate to q1, then to q2, then to q3 over three clock cycles, modeling a shift register.
   
 
