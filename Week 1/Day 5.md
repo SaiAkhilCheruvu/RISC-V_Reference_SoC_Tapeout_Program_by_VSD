@@ -24,7 +24,7 @@ end
 - An if-else inside another if-else, used for multiple conditions.
 
 - Checks conditions sequentially.
-- 
+
 
 ```
 always @(*) begin
