@@ -110,3 +110,70 @@ Hierarchical and flat synthesis are two approaches to logic synthesis in digital
 | Best Use Case      | Modular, incremental development      | Maximum optimization/performance      |
 
 
+## Flip-Flop Coding Techniques
+
+Flip-flops are essential building blocks in digital systems, acting as basic memory elements that can store one bit of information. They form the foundation for registers, counters, and state machines. Different coding styles are used to implement flip-flops, primarily depending on whether resets or sets are asynchronous (take effect immediately, independent of the clock) or synchronous (take effect only on a clock edge). Below are commonly used Verilog coding styles with explanations.
+
+### Asynchronous Reset D Flip-Flop
+
+```
+module dff_asyncres (input clk, input async_reset, input d, output reg q);
+  always @ (posedge clk, posedge async_reset)
+    if (async_reset)
+      q <= 1'b0;
+    else
+      q <= d;
+endmodule
+```
+
+- **Asynchronous reset:** When async_reset is high, the output q is immediately cleared to 0, regardless of the clock.
+  
+- **Edge-triggered behavior:** If the reset is low, q captures the input d on the rising edge of clk.
+  
+- **Use case:** Ensures that the circuit can be reset quickly, often used for initializing logic on power-up.
+
+
+### Asynchronous Set D Flip-Flop
+
+```
+module dff_async_set (input clk, input async_set, input d, output reg q);
+  always @ (posedge clk, posedge async_set)
+    if (async_set)
+      q <= 1'b1;
+    else
+      q <= d;
+endmodule
+```
+
+- **Asynchronous set:** When async_set is asserted, q is forced to 1 immediately, independent of the clock.
+
+- **Normal operation:** On the rising edge of clk, q captures d if the set signal is low.
+  
+- **Use case:** Useful when a system requires an output to be initialized to 1 at startup or during certain conditions.
+
+
+### Synchronous Reset D Flip-Flop
+
+```
+module dff_syncres (input clk, input async_reset, input sync_reset, input d, output reg q);
+  always @ (posedge clk)
+    if (sync_reset)
+      q <= 1'b0;
+    else
+      q <= d;
+endmodule
+```
+
+- **Synchronous reset:** The reset takes effect only on the rising edge of clk, setting q to 0.
+
+- **Controlled timing:** Unlike asynchronous resets, this ensures the reset behavior is fully synchronized with the clock.
+
+- **Use case:** Preferred in FPGA designs where synchronous resets help avoid metastability and improve timing closure.
+
+
+## Workflow for Simulation and Synthesis
+
+### 1. Asynchronous Reset D Flip-Flop
+
+#### Icarus Verilog Simulation
+
