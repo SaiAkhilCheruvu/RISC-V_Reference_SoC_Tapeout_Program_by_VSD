@@ -112,17 +112,15 @@ endmodule
 ```
 
 
-#### Synthesis Of Ternary Operator Multiplexer
+#### Synthesis Of Ternary Operator Multiplexer:
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-53-12" src="https://github.com/user-attachments/assets/98cd9a75-885b-481d-bfa1-92d1254402b7" />
 
 
-#### Simulation Of Ternary Operator Multiplexer
+#### Simulation Of Ternary Operator Multiplexer:
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
 
-
-#### GLS Of Ternary Operator Multiplexer
 
 Use the following command, modifying the file paths as needed, to run a gate-level simulation (GLS):
 
@@ -130,6 +128,10 @@ Use the following command, modifying the file paths as needed, to run a gate-lev
 iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux.v testbench.v
 ```
 
+
+#### GLS Of Ternary Operator Multiplexer:
+
+<img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
 
 
 
@@ -148,11 +150,20 @@ module bad_mux (input i0, input i1, input sel, output reg y);
 endmodule
 ```
 
+
+#### Synthesis Of Bad Multiplexer:
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-21-46" src="https://github.com/user-attachments/assets/d1fa143c-a05a-466e-8b26-5fdcd2906f58" />
+
+
+#### Simulation Of Bad Multiplexer:
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-42-22" src="https://github.com/user-attachments/assets/f20fe3bc-c50a-4253-8946-a1c41055b951" />
 
 
+#### GLS Of Bad Multiplexer:
+
+<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-42-22" src="https://github.com/user-attachments/assets/f20fe3bc-c50a-4253-8946-a1c41055b951" />
 
 
 ### Demonstration 3 - Blocking Caveat
@@ -169,7 +180,23 @@ module blocking_caveat (input a, input b, input c, output reg d);
 endmodule
 ```
 
+
+#### Synthesis Of Blocking Caveat:
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-22-25" src="https://github.com/user-attachments/assets/a314052c-1b9a-4da9-980c-47ed58973979" />
+
+#### Simulation Of Blocking Caveat:
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-43-13" src="https://github.com/user-attachments/assets/2f62df62-8ded-42ee-9b08-ac092090e8ab" />
 
+
+#### GLS Of Blocking Caveat:
+
+<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-43-13" src="https://github.com/user-attachments/assets/2f62df62-8ded-42ee-9b08-ac092090e8ab" />
+
+
+
+
+## Summary
+
+Gate-level simulation (GLS) plays an important role in validating the synthesized netlist, ensuring that functionality, timing, and testability remain intact after synthesis. To avoid synthesis-simulation mismatches, it is crucial to stick to synthesizable RTL and write code that is both clear and unambiguous. A good coding practice is to use blocking (=) assignments when describing combinational logic, while reserving non-blocking (<=) assignments for sequential logic. Hands-on lab work further reinforces these concepts, helping you recognize common pitfalls in RTL design and strengthen your overall understanding.
