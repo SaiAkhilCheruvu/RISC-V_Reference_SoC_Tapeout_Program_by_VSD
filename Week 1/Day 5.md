@@ -19,6 +19,8 @@ always @(*) begin
 end
 ```
 
+
+
 ## Nested If-Else Statements
 
 - An if-else inside another if-else, used for multiple conditions.
@@ -37,4 +39,6 @@ always @(*) begin
     end
 end
 ```
+
+
 
