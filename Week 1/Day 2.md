@@ -177,3 +177,107 @@ endmodule
 
 #### Icarus Verilog Simulation
 
+
+```
+iverilog dff_asyncres.v tb_dff_asyncres.v
+./a.out
+gtkwave tb_dff_asyncres.vcd
+```
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-02 21-55-22" src="https://github.com/user-attachments/assets/9444824c-a4fe-4787-b45b-1b4eb06cc58b" />
+
+
+
+#### Synthesis Using Yosys
+
+
+```
+yosys
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_asyncres.v
+synth -top dff_asyncres
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-26-42" src="https://github.com/user-attachments/assets/a86c79c2-2075-43e2-ac9d-df520671ffba" />
+
+
+
+
+### 2. Asynchronous Set D Flip-Flop
+
+
+
+#### Icarus Verilog Simulation
+
+
+```
+iverilog dff_async_set.v tb_dff_async_set.v
+./a.out
+gtkwave tb_dff_async_set.vcd
+```
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-02 21-58-51" src="https://github.com/user-attachments/assets/7728e53d-8273-4b1e-96c9-cca816254542" />
+
+
+
+#### Synthesis Using Yosys
+
+
+```
+yosys
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_async_set.v
+synth -top dff_async_set
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-28-36" src="https://github.com/user-attachments/assets/29224f02-b6d0-4d81-9e36-e65ae30d416a" />
+
+
+
+### 3. Synchronous Reset D Flip-Flop
+
+
+#### Icarus Verilog Simulation
+
+
+```
+iverilog dff_syncres.v tb_dff_syncres.v
+./a.out
+gtkwave tb_dff_syncres.vcd
+```
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-01-35" src="https://github.com/user-attachments/assets/c3e5b073-c682-4336-b028-c2589b909dd7" />
+
+
+
+#### Synthesis Using Yosys
+
+
+```
+yosys
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_syncres.v
+synth -top dff_syncres
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-29-59" src="https://github.com/user-attachments/assets/2b68f2f5-2bc0-42ea-a7b9-cfdd1f79e5c6" />
+
+
+
+
+## Summary 
+
+Timing libraries provide the foundation for accurate delay modeling and constraint handling, which are critical for meeting performance goals. Different synthesis strategies allow you to balance power, area, and timing trade-offs, while reliable flip-flop coding practices ensure predictable sequential behavior and smoother synthesis results. Keep experimenting with these concepts to sharpen your RTL design skills and gain deeper insight into how synthesis tools translate your code into efficient hardware.
+
