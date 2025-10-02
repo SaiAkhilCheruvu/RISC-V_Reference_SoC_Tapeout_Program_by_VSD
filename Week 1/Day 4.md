@@ -122,10 +122,13 @@ endmodule
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
 
 
-Use the following command, modifying the file paths as needed, to run a gate-level simulation (GLS):
+Use the following command run a gate-level simulation (GLS):
 
 ```
-iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux.v testbench.v
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+
 ```
 
 
