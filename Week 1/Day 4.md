@@ -111,9 +111,25 @@ module ternary_operator_mux (input i0, input i1, input sel, output y);
 endmodule
 ```
 
+
+#### Synthesis Of Ternary Operator Multiplexer
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-53-12" src="https://github.com/user-attachments/assets/98cd9a75-885b-481d-bfa1-92d1254402b7" />
 
+
+#### Simulation Of Ternary Operator Multiplexer
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
+
+
+#### GLS Of Ternary Operator Multiplexer
+
+Use the following command, modifying the file paths as needed, to run a gate-level simulation (GLS):
+
+```
+iverilog /path/to/primitives.v /path/to/sky130_fd_sc_hd.v ternary_operator_mux.v testbench.v
+```
+
 
 
 
