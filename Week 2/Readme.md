@@ -1,10 +1,29 @@
 # Week 2
 
 
-## 1. Overview of System-on-Chip (SoC) Design
+## 1. Introduction to the VSDBabySoC
+
+VSDBabySoC is a compact yet capable RISC-V based System-on-Chip (SoC) designed primarily for educational and testing purposes. Its main goals are to integrate and test three open-source IP cores together for the first time and to calibrate the analog components effectively.
+
+**Key components of VSDBabySoC:**
+
+- **RVMYTH Microprocessor:** Core processing unit implementing RISC-V instruction set
+
+- **8x Phase-Locked Loop (PLL):** Generates a stable system clock
+
+- **10-bit DAC:** Interfaces with analog devices, illustrating mixed-signal integration
 
 
-### 1.1 Defining SoCs and Their Core Principles
+<img width="2270" height="1260" alt="image" src="https://github.com/user-attachments/assets/4b95cb9a-a25a-4acc-b931-0fe1c9b4005d" />
+
+
+
+This small-scale SoC provides a realistic but approachable platform for students and developers to learn SoC design, functional modeling, and verification methodologies.
+
+## 2. Overview of System-on-Chip (SoC) Design
+
+
+### 2.1 Defining SoCs and Their Core Principles
 
 A System-on-Chip (SoC) is an advanced form of integrated circuit that brings together multiple subsystems—processors, memory, communication blocks, and peripherals—onto a single silicon die. This consolidation transforms what once required several discrete chips into a unified solution, enabling high performance, low power operation, and compact designs.
 
@@ -21,7 +40,7 @@ The driving principle is functional convergence, where varied computational and 
 - **Higher Reliability:** Fewer physical interconnects reduce failure points
   
 
-### 1.2 Evolutionary Path and Market Influences
+### 2.2 Evolutionary Path and Market Influences
 
 The SoC’s rapid development can be traced to technological enablers and growing market needs.
 
@@ -29,7 +48,7 @@ The SoC’s rapid development can be traced to technological enablers and growin
   
 - **Market Drivers:** Longer battery life for mobile devices, miniaturization for IoT products, cost constraints in consumer electronics, and stringent automotive safety standards.
 
-### 1.3 Hierarchies in Design Abstraction
+### 2.3 Hierarchies in Design Abstraction
 
 Designing an SoC requires working across abstraction layers:
 
@@ -46,10 +65,10 @@ Designing an SoC requires working across abstraction layers:
 - **Layout:** Geometric design for fabrication
 
 
-## 2. Structural Elements of SoC Architecture
+## 3. Structural Elements of SoC Architecture
 
 
-### 2.1 Computational Engines
+### 3.1 Computational Engines
 
 Modern SoCs feature a variety of processors tailored to application domains:
 
@@ -58,7 +77,7 @@ Modern SoCs feature a variety of processors tailored to application domains:
 - **Specialized Units:** GPUs for graphics and parallel tasks, DSPs for signal processing, NPUs for AI workloads
 
 
-### 2.2 Memory Framework
+### 3.2 Memory Framework
 
 Performance hinges on memory subsystem design:
 
@@ -67,7 +86,7 @@ Performance hinges on memory subsystem design:
 - **Off-Chip Interfaces:** DRAM and Flash controllers, MMUs for address translation
 
 
-### 2.3 Data Interconnects
+### 3.3 Data Interconnects
 
 Interconnects dictate efficiency in communication:
 
@@ -75,7 +94,7 @@ Interconnects dictate efficiency in communication:
   
 - **Network-on-Chip:** Scalable packet-based communication, QoS support, and power-conscious routing
 
-### 2.4 I/O and Peripheral Units
+### 3.4 I/O and Peripheral Units
 
 Connectivity makes SoCs versatile:
 
@@ -86,10 +105,10 @@ Connectivity makes SoCs versatile:
 - **User Interfaces:** Display controllers, touch inputs, audio codecs
 
 
-## 3. VSDBabySoC: A Learning-Oriented SoC
+## 4. VSDBabySoC: A Learning-Oriented SoC
 
 
-### 3.1 Purpose and Pedagogy
+### 4.1 Purpose and Pedagogy
 
 The VSDBabySoC is crafted as a teaching aid to simplify yet realistically represent SoC design. It emphasizes:
 
@@ -100,7 +119,7 @@ The VSDBabySoC is crafted as a teaching aid to simplify yet realistically repres
 - **Stepwise Learning:** Modular design to help grasp concepts progressively
 
 
-### 3.2 Core Modules
+### 4.2 Core Modules
 
 - **RVMYTH Processor (RISC-V based):** Demonstrates instruction pipelines, ALU operations, register file usage, and memory interactions
 
@@ -109,7 +128,7 @@ The VSDBabySoC is crafted as a teaching aid to simplify yet realistically repres
 - **10-bit DAC:** Highlights digital-to-analog interfacing, accuracy challenges, and mixed-signal integration
 
 
-### 3.3 Integration Blueprint
+### 4.3 Integration Blueprint
 
 - **Hierarchical Design:** From module-level building blocks to full system integration
 
@@ -118,9 +137,9 @@ The VSDBabySoC is crafted as a teaching aid to simplify yet realistically repres
 - **Signal Integrity:** Careful routing, analog-digital isolation, and power decoupling
 
 
-## 4. Functional Modeling and Verification
+## 5. Functional Modeling and Verification
 
-### 4.1 Abstraction for Functional Modeling
+### 5.1 Abstraction for Functional Modeling
 
 Functional modeling validates system intent before detailed implementation, supporting:
 
@@ -133,19 +152,19 @@ Functional modeling validates system intent before detailed implementation, supp
 - Performance analysis
   
 
-### 4.2 Verification Techniques
+### 5.2 Verification Techniques
 
 - **Simulation-Based:** Directed tests, random coverage-driven methods, assertion checks
   
 - **Formal Verification:** Property proofs, equivalence checks, model checking
 
 
-### 4.3 Testbench Infrastructure
+### 5.3 Testbench Infrastructure
 
 Includes stimulus generation (corner cases, compliance testing) and response validation (coverage analysis, reference model comparisons).
 
 
-## 5. Verification and Validation Practices
+## 6. Verification and Validation Practices
 
 - **Unit-Level:** Testing individual modules and interfaces
   
@@ -156,14 +175,14 @@ Includes stimulus generation (corner cases, compliance testing) and response val
 Tools include Icarus Verilog, ModelSim, VCS for simulation, and GTKWave for waveform inspection.
 
 
-## 6. Integration and Interconnect Strategies
+## 7. Integration and Interconnect Strategies
 
 - **Challenges:** Timing closure, power optimization, managing clock domains
 
 - **Interfaces:** AXI/AHB buses, GPIOs, interrupts, and custom protocols for performance-tuned applications
 
 
-## 7. Mixed-Signal Considerations
+## 8. Mixed-Signal Considerations
 
 - **Noise Isolation:** Guarding analog blocks from digital switching noise
 
@@ -172,7 +191,7 @@ Tools include Icarus Verilog, ModelSim, VCS for simulation, and GTKWave for wave
 - **Signal Integrity:** Termination, crosstalk control, and high-speed data routing
 
 
-## 8. Educational Outcomes
+## 9. Educational Outcomes
 
 Learners using VSDBabySoC build:
 
@@ -183,9 +202,9 @@ Learners using VSDBabySoC build:
 - **Professional Competence:** Documentation, teamwork, and project management
 
 
-## 9. Industry Relevance
+## 10. Industry Relevance
 
-### 9.1 Current Trends
+### 10.1 Current Trends
 
 - Open-source hardware ecosystems (RISC-V adoption, open toolchains)
 
@@ -194,7 +213,7 @@ Learners using VSDBabySoC build:
 - System integration for IoT and automotive industries
 
 
-### 9.2 Emerging Perspective: Chiplet-Based SoCs
+### 10.2 Emerging Perspective: Chiplet-Based SoCs
 
 A new frontier in SoC design is chiplet architecture, where multiple smaller dies (chiplets) are integrated within a single package. Instead of one monolithic SoC, different chiplets (e.g., CPU, GPU, memory, I/O) are fabricated separately and then connected using high-speed interconnects.
 
@@ -211,7 +230,7 @@ Advantages include:
 Chiplet-based integration complements traditional SoC design by overcoming scaling limitations while maintaining performance and power efficiency.
 
 
-### 9.3 Career Preparation and Professional Development
+### 10.3 Career Preparation and Professional Development
 
 Students gain industry-aligned skills in:
 
@@ -226,7 +245,7 @@ Students gain industry-aligned skills in:
 
 Career roles span ASIC/FPGA design, verification, integration, and technical leadership.
 
-## 10. Conclusion and Outlook
+## 11. Conclusion and Outlook
 
 VSDBabySoC serves as an effective bridge between academic concepts and industry practices. Learners gain:
 
