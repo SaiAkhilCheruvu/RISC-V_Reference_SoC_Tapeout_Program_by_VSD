@@ -266,6 +266,20 @@ This foundation equips students to adapt to the fast-evolving semiconductor land
 In this section, we provide a step-by-step walkthrough of VSDBabySoC simulation, covering both pre-synthesis and post-synthesis stages. The goal is to observe the interaction between the RVMYTH digital core and the DAC peripheral, by adjusting digital output values and monitoring the resulting changes on the DAC output.
 
 
+**Pre-Synthesis Simulation V/s Post-Synthesis Simulation**
+
+
+| Characteristic        | Pre-Synthesis Simulation (RTL Simulation) | Post-Synthesis Simulation (Gate-Level Simulation) |
+|-----------------------|-------------------------------------------|--------------------------------------------------|
+| **Input Design**      | High-level RTL code (Verilog/VHDL)       | Gate-level netlist produced by synthesis        |
+| **Primary Goal**      | Verify the functional correctness of the design logic and algorithm | Ensure the synthesized netlist matches RTL functionality and check for timing issues |
+| **Abstraction Level** | Behavioral: Focuses on what the circuit does | Structural: Focuses on how the circuit is built from specific gates in a technology library |
+| **Timing Model**      | Idealized: Assumes zero or unit delays; ignores physical delays | Realistic: Accounts for gate delays and can include wire delays via SDF annotation |
+| **Simulation Speed**  | Fast due to higher-level abstraction      | Slower, as each gate and its delay is simulated |
+| **When to Use**       | Early in the design cycle to detect and fix logical errors quickly | After synthesis to validate the netlist and perform preliminary timing checks |
+
+
+
 ### Pre-Synthesis Simulation
 
 The pre-synthesis simulation allows us to verify the functional behavior of the VSDBabySoC before any synthesis or hardware mapping. In this stage, the digital RVMYTH core and DAC model are simulated together, enabling observation of signal interactions and output behavior.
@@ -342,6 +356,35 @@ cd ~/VSDBabySoC
 make post_synth_sim
 ```
 
-**Step 2: Run the post-synthesis simulation**
+**Step 2: View the post-synthesis simulation results**
+
+```
+$ gtkwave output/post_synth_sim/post_synth_sim.vcd
+```
+
+
+Here is the Result of the Post Synthesis Simulation :
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-03 11-09-39" src="https://github.com/user-attachments/assets/11bcafdb-a075-48dd-8786-78af430ccce0" />
+
+
+In this waveform, the following signals can be observed:
+
+```\core.CLK``` – The clock input to the RVMYTH core, originally provided by the PLL.
+
+```reset``` – The reset input to the RVMYTH core, coming from an external source.
+
+```OUT (wire)``` – The output of the VSDBabySoC module. This originates from the DAC, but due to simulation limitations, it behaves digitally rather than analog.
+
+```\core.OUT[9:0]``` – The 10-bit output from RVMYTH register #17, serving as input to the DAC.
+
+```OUT (real)``` – A real-valued wire from the DAC module that can simulate analog behavior.
+
+
+**Important Note:** The synthesis process does not support real-valued signals, so \vsdbabysoc.OUT must use a standard wire type. In Icarus Verilog, this wire behaves digitally, preventing observation of true analog output. To view analog-like behavior, use \dac.OUT, which is a real-valued signal from the DAC.
+
+
+
 
 
