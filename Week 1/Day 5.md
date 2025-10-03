@@ -83,7 +83,88 @@ module ex (
 endmodule
 ```
 
+## Labs For Simulation And Synthesis
 
+Navigate to the ```verilog_files``` directory
+
+### Steps For Simulation:
+
+1. Compile the Design and Testbench:
+
+   ```
+   iverilog design.v tb_design.v
+   ```
+
+2. Execute the generated simulation binary to produce a VCD waveform file:
+
+   ```
+   ./a.out
+   ```
+
+3. Open the VCD file with GTKWave to view signal transitions:
+
+   ```
+   gtkwave tb_design.vcd
+   ```
+
+
+### Steps For Synthesis:
+
+1. Start Yosys:
+
+   ```
+   yosys
+   ```
+
+2. Inside Yosys, read the standard cell library:
+
+   ```
+   read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   ```
+
+3. Read your Verilog design file:
+
+   ```
+   read_verilog design.v
+   ```
+
+4. Specify the top model to synthesize:
+
+   ```
+   synth -top design
+   ```
+
+5. Run technology mapping with your liberty file:
+
+   ```
+   abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+   ```
+
+6. Visualize the synthesized logic:
+
+   ```
+   show
+   ```
+
+
+
+
+## Labs For IF Statements
+
+If statements are conditional constructs in Verilog that execute one block of code when a specified condition is true and an optional block when it is false.
+
+
+
+### Incomplete If Statement (``` incomp_if ```):
+
+```
+module incomp_if (input i0, input i1, input i2, output reg y);
+always @(*) begin
+    if (i0)
+        y <= i1;
+end
+endmodule
+```
 
 
 
