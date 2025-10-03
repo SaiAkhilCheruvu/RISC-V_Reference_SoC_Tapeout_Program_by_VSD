@@ -386,5 +386,29 @@ In this waveform, the following signals can be observed:
 
 
 
+## Conclusion
+
+This phase of the project successfully reinforced both conceptual knowledge and hands-on skills in digital design verification.
 
 
+### 1. Conceptual Highlights:
+
+Developed a clear understanding of the differences between pre-synthesis (RTL) and post-synthesis (gate-level) simulations.
+
+Explored how abstraction levels and timing considerations influence design correctness.
+
+### 2. Practical Experience:
+
+Built and ran simulations using Verilog and waveform analysis tools.
+
+Verified functionality across both RTL and synthesized designs.
+
+Strengthened debugging techniques and systematic problem-solving approaches.
+
+### 3. Key Outcomes:
+
+Established a complete and functional simulation environment.
+
+Ensured logical consistency between RTL and synthesized netlists.
+
+Gained exposure to timing verification and gate-level analysis.
