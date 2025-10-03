@@ -325,3 +325,23 @@ In this waveform, the following signals can be observed:
 
 
 ### Post-Synthesis Simulation
+
+The post-synthesis simulation allows us to verify the VSDBabySoC functionality after synthesis, reflecting how the design would behave when implemented in hardware. This stage ensures that the synthesized netlist matches the intended logic and that timing and functional correctness are preserved.
+
+To perform post-synthesis simulation, first synthesize the VSDBabySoC design to generate the hardware-mapped netlist:
+
+```
+$ cd ~/VSDBabySoC
+$ make synth
+```
+
+**Step 1: Run the post-synthesis simulation**
+
+```
+cd ~/VSDBabySoC
+make post_synth_sim
+```
+
+**Step 2: Run the post-synthesis simulation**
+
+
