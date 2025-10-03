@@ -41,4 +41,49 @@ end
 ```
 
 
+## Latch Inference in Verilog
+
+- Occurs when a variable in a combinational block is not assigned in all possible conditions.
+
+- Usually unintentional and can cause unpredictable hardware behavior.
+
+- Can be avoided by assigning default values or using complete if-else or case statements.
+
+
+```
+
+module ex (
+    input wire a, b, sel,
+    output reg y
+);
+    always @(a, b, sel) begin
+        if (sel == 1'b1)
+            y = a; // No 'else' - y is not assigned when sel == 0
+    end
+endmodule
+
+```
+
+**Problem:** When ```sel``` is 0, ```y``` is not assigned, so a latch is inferred.
+
+**Solution:** Add an ```else``` or ```default``` case:
+
+```
+
+module ex (
+    input wire a, b, sel,
+    output reg y
+);
+    always @(a, b, sel) begin
+        case(sel)
+            1'b1 : y = a;
+            default : y = 1'b0; // Default assignment
+        endcase
+    end
+endmodule
+```
+
+
+
+
 
