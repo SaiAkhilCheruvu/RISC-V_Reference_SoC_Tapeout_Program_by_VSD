@@ -147,6 +147,59 @@ Navigate to the ```verilog_files``` directory
    ```
 
 
+## Syntax Examples
+
+**If Statements:**
+
+```
+always @(*) begin
+  if (condition) begin
+    // code executed if condition is true
+  end
+end
+```
+
+**If Else Statements:**
+
+```
+always @(*) begin
+  if (condition) begin
+    // code if condition is true
+  end else begin
+    // code if condition is false
+  end
+end
+```
+
+**Case Statements:**
+
+```
+always @(*) begin
+    case (expression)
+        value1: begin
+            // statements executed when expression == value1
+        end
+        value2: begin
+            // statements executed when expression == value2
+        end
+        default: begin
+            // statements executed if no match found
+        end
+    endcase
+end
+```
+
+
+**For Loops:**
+
+```
+integer i;
+always @(*) begin
+    for (i = 0; i < N; i = i + 1) begin
+        // code repeated N times
+    end
+end
+```
 
 
 ## Labs For IF Statements
@@ -155,7 +208,7 @@ If statements are conditional constructs in Verilog that execute one block of co
 
 
 
-### Incomplete If Statement (``` incomp_if ```):
+### Incomplete If Statement (```incomp_if ```):
 
 ```
 module incomp_if (input i0, input i1, input i2, output reg y);
@@ -183,7 +236,7 @@ This Verilog code defines a module where the output y is assigned the value of i
 
 
 
-### Nested If Else Statement (``` incomp_if2 ```):
+### Nested If Else Statement (```incomp_if2 ```):
 
 ```
 module incomp_if2 (input i0, input i1, input i2, input i3, output reg y);
@@ -218,7 +271,7 @@ This Verilog module uses an always @(*) block to model combinational logic with 
 Case statements are conditional constructs in Verilog that select and execute one block of code from multiple possibilities based on the value of a signal, providing a clear way to handle multiple discrete conditions.
 
 
-### Incomplete Case (``` incomp_case```):
+### Incomplete Case (```incomp_case```):
 
 ```
 module incomp_case  (input i0, input i1, input i2, input [1:0], output reg y);
@@ -247,7 +300,7 @@ This Verilog module "incomp_case" uses a case statement inside an always @(*) bl
 
 
 
-### Complete Case (``` comp_case```):
+### Complete Case (```comp_case```):
 
 ```
 module comp_case (input i0, input i1, input i2, input [1:0] sel, output reg y);
@@ -277,7 +330,7 @@ The code uses a case statement inside an always block to select the output based
 
 
 
-### Bad Case (``` bad_case```):
+### Bad Case (```bad_case```):
 
 ```
 module bad_case (
@@ -313,7 +366,7 @@ The code uses a case statement with a wildcard pattern (?) in one case item, all
 
 
 
-### Partial Assignments in Case (``` partial_case_assign```):
+### Partial Assignments in Case (```partial_case_assign```):
 
 ```
 module partial_case_assign (
@@ -502,6 +555,14 @@ This code describes a full adder using continuous assignment. It adds three sing
 <img width="1280" height="800" alt="Screenshot from 2025-10-03 17-26-01" src="https://github.com/user-attachments/assets/0cf66eba-d83f-4844-a0e8-3799ee014313" />
 
 
+### What Is A Ripple Carry Adder (RCA)?
+
+
+A ripple carry adder is a digital circuit that adds two binary numbers by connecting multiple full adders in series. The carry-out from each full adder "ripples" to the next adder as carry-in. While simple and modular, the carry propagation through all stages causes delay, making it slower for larger bit-widths. It forms a fundamental structure for binary addition in digital systems.
+
+
+<img width="781" height="329" alt="image" src="https://github.com/user-attachments/assets/484b7315-3807-4689-936c-9e33afa12c8c" />
+
 
 ### 8-bit Ripple Carry Adder with Generate Block (```rca```):
 
@@ -544,3 +605,9 @@ This code implements an 8-bit ripple carry adder using full adders. It adds two 
 
 <img width="1280" height="800" alt="Screenshot from 2025-10-03 17-43-00" src="https://github.com/user-attachments/assets/22f9a5ff-df63-4118-9733-8812befb47fa" />
 
+
+
+## Summary 
+
+
+Full if-else and case constructs were employed to prevent unwanted latch generation. For loops and generate blocks were utilized to create scalable and synthesis-friendly designs. All signals were ensured to be assigned in every possible execution path when coding combinational logic. Practical lab exercises helped solidify these principles through hands-on Verilog coding and synthesis verification.
