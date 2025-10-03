@@ -114,10 +114,26 @@ endmodule
 
 #### Synthesis Of Ternary Operator Multiplexer:
 
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog ternary_operator_mux.v
+synth -top ternary_operator_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-53-12" src="https://github.com/user-attachments/assets/98cd9a75-885b-481d-bfa1-92d1254402b7" />
 
 
 #### Simulation Of Ternary Operator Multiplexer:
+
+```
+iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+```
+
+
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
 
@@ -134,7 +150,8 @@ gtkwave tb_ternary_operator_mux.vcd
 
 #### GLS Of Ternary Operator Multiplexer:
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
+<img width="1280" height="800" alt="Screenshot from 2025-10-03 21-16-50" src="https://github.com/user-attachments/assets/62ae85f2-f3d8-4eca-806a-32af4d847585" />
+
 
 
 
@@ -156,17 +173,44 @@ endmodule
 
 #### Synthesis Of Bad Multiplexer:
 
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog bad_mux.v
+synth -top bad_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-21-46" src="https://github.com/user-attachments/assets/d1fa143c-a05a-466e-8b26-5fdcd2906f58" />
 
 
 #### Simulation Of Bad Multiplexer:
+
+```
+iverilog bad_mux.v tb_bad_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+```
+
+
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-42-22" src="https://github.com/user-attachments/assets/f20fe3bc-c50a-4253-8946-a1c41055b951" />
 
 
 #### GLS Of Bad Multiplexer:
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-42-22" src="https://github.com/user-attachments/assets/f20fe3bc-c50a-4253-8946-a1c41055b951" />
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_mux_net.v tb_bad_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+```
+
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-03 21-19-41" src="https://github.com/user-attachments/assets/fe12afe8-990b-4a8b-ae10-2583f99e9b04" />
+
 
 
 ### Demonstration 3 - Blocking Caveat
@@ -186,16 +230,44 @@ endmodule
 
 #### Synthesis Of Blocking Caveat:
 
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog blocking_caveat.v
+synth -top blocking_caveat
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr blocking_caveat_net.v
+show
+```
+
+
+
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-22-25" src="https://github.com/user-attachments/assets/a314052c-1b9a-4da9-980c-47ed58973979" />
 
 #### Simulation Of Blocking Caveat:
+
+```
+iverilog blocking_caveat.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
+
+
 
 <img width="1280" height="800" alt="Screenshot from 2025-09-28 18-43-13" src="https://github.com/user-attachments/assets/2f62df62-8ded-42ee-9b08-ac092090e8ab" />
 
 
 #### GLS Of Blocking Caveat:
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-43-13" src="https://github.com/user-attachments/assets/2f62df62-8ded-42ee-9b08-ac092090e8ab" />
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
+
+
+
+<img width="1280" height="800" alt="Screenshot from 2025-10-03 21-23-07" src="https://github.com/user-attachments/assets/56eadc8d-0081-495c-9452-d39c85506d0d" />
+
 
 
 
