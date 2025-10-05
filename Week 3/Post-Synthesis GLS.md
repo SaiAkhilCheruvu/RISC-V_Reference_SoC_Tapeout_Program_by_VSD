@@ -81,3 +81,10 @@ GLS is performed to:
 - **Typical flow:** RTL design → Synthesis → Gate-level netlist → Gate-level simulation → Timing/power analysis.
 
 
+## Lab On GLS Implementation For VSDBabySoC
+
+### Open Top-Level Design with Supporting Modules
+
+```
+yosys
+```
