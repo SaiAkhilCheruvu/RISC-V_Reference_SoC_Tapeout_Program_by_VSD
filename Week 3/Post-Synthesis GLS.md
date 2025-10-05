@@ -264,3 +264,21 @@ gtkwave post_synth_sim.vcd
 
 <img width="1280" height="800" alt="Screenshot from 2025-10-05 15-03-17" src="https://github.com/user-attachments/assets/c9a24769-4cc9-4e75-a4a5-69d9c57ef2db" />
 
+
+## Summary
+
+In this lab, we performed Gate-Level Simulation (GLS) of VSDBabySoC, starting from loading the top-level design and supporting modules to synthesizing the design and running post-synthesis simulations. The process included:
+
+- Reading Verilog source files and design libraries.
+
+- Synthesizing the design using the target technology library.
+
+- Performing optimizations, mapping, flattening, and other synthesis steps.
+
+- Generating a post-synthesis Verilog netlist for GLS.
+
+- Running post-synthesis simulation using Icarus Verilog and viewing waveforms with GTKWave.
+
+A key task (Week 2) was to compare GLS output with functional simulation output. The results were consistent, confirming that the post-synthesis design preserved the intended functionality.
+
+This lab demonstrates the importance of GLS in verifying timing, hazards, and real hardware behavior, complementing RTL functional simulations to ensure a reliable and optimized hardware design.
