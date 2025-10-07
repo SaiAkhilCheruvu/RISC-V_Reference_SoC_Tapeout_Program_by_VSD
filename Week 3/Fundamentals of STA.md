@@ -36,12 +36,17 @@ A **timing path** is the logical route that a signal follows from a **start poin
 - **Start Points:** Flip-flop clock pins or input ports  
 - **End Points:** Flip-flop data (D) pins or output ports
 
+<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 07_57_33" src="https://github.com/user-attachments/assets/f3e46f44-a7c7-4b6c-aa15-03ba5b3ff3bf" />
+
 ---
 
 ## 2. Arrival Time and Slack
 
 - **Arrival Time (AAT):** The actual time taken by a signal to reach an endpoint  
 - **Required Arrival Time (RAT):** The expected or allowable latest time by which the signal should arrive
+
+  <img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 07_59_35" src="https://github.com/user-attachments/assets/5469feba-a377-4419-b6a5-92423b161b24" />
+
 
 ### 🧩 Slack Formula
 
@@ -52,6 +57,9 @@ Slack = RAT – AAT
 
 - **Positive Slack →** Timing met  
 - **Negative Slack →** Timing violation
+
+<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 08_00_44" src="https://github.com/user-attachments/assets/d362e2f8-0682-449f-a5b6-93a868297eed" />
+
 
 ---
 
@@ -83,12 +91,16 @@ Maximum expected time = 1 ns
 
 | Type | Description |
 |------|--------------|
-| **Reg-to-Reg** | Between two flip-flops (launch → capture) |
-| **In-to-Reg** | Input port → Flip-flop D pin |
-| **Reg-to-Out** | Flip-flop output → Output port |
-| **In-to-Out** | Input port → Output port |
+| **reg2reg** | Between two flip-flops (launch → capture) |
+| **in2reg** | Input port → Flip-flop D pin |
+| **reg2out** | Flip-flop output → Output port |
+| **in2out** | Input port → Output port |
 
-> IO timing includes *In-to-Reg*, *Reg-to-Out*, and *In-to-Out* paths.
+**reg2reg:**
+
+
+
+> IO timing includes *in2reg*, *reg2out*, and *in2out* paths.
 
 ### 4.2 Other Timing Analyses
 1. **Clock Gating:** Ensures no glitches occur when enabling/disabling clock gates  
