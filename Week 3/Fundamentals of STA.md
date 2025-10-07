@@ -342,7 +342,7 @@ AAT is indicated using yellow, RAT is indicated using Blue and Slack is indicate
 
 Process variations can change delay characteristics across the chip.
 
-<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 09_54_42" src="https://github.com/user-attachments/assets/162af09b-e83f-4ee7-b187-3e73e134c42a" />
+
 
 ### 14.1 Sources of Variation
 1. **Etching Process:** Variations in etch depth/width alter resistance & capacitance
@@ -350,12 +350,15 @@ Process variations can change delay characteristics across the chip.
 
 <img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 09_54_20" src="https://github.com/user-attachments/assets/0ad4c7e0-3e1f-4725-95cd-fbbfea31ebdb" />
 
+<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 09_54_42" src="https://github.com/user-attachments/assets/0bf04ff2-8c26-4762-9b2b-0d4a23cbaefd" />
 
 ### 14.2 OCV Derates
 To model variation:
 - **Max Derate:** Used for setup (adds delay)  
 - **Min Derate:** Used for hold (reduces delay)
 
+
+<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 09_56_47" src="https://github.com/user-attachments/assets/a69c48ba-f15d-4764-90a5-14961af7fbd3" />
 
 ---
 
@@ -364,12 +367,17 @@ To model variation:
 - **Clock Pull-In:** Reduced delay → Clock arrives earlier  
 - **Clock Push-Out:** Increased delay → Clock arrives later
 
-<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 09_56_47" src="https://github.com/user-attachments/assets/4679b782-581d-415e-907e-412c049a7aac" />
+<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 20_33_18" src="https://github.com/user-attachments/assets/bc4d2d5f-138c-4cb3-a339-3a5d3057130d" />
 
 
-### 14.1 Additional Pessimism
+
+### 15.1 Additional Pessimism
 STA assumes worst-case scenarios (max skew, derates, jitter).  
 **Pessimism removal** reduces over-conservative margins for realistic silicon correlation.
+
+
+<img width="1366" height="768" alt="Course_ VSD - Static Timing Analysis - I _ Udemy - Brave 07-10-2025 20_37_08" src="https://github.com/user-attachments/assets/0c0a64aa-28c9-4ef4-a0a8-e64af5ac918d" />
+
 
 ---
 
