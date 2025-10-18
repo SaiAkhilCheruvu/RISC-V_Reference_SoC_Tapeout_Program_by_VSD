@@ -41,7 +41,7 @@ Reduce prototyping costs and speed up development cycles.
 
 ## LABS ON DAY-1
 
-**Step 1: Clone the Repository**
+### Step 1: Clone the Repository
 
 To begin working with SPICE simulations using the Sky130 process, you’ll first need to obtain the necessary model files and example circuits. These resources are available in a public GitHub repository. Clone the repository to your local machine using the command below:
 
@@ -53,7 +53,7 @@ This will download all the Sky130 model files and circuit examples required for 
 
 <img width="1280" height="800" alt="Screenshot from 2025-10-18 16-21-16" src="https://github.com/user-attachments/assets/4ab7a3ed-dc32-48e0-a04f-e407f08be3f9" />
 
-**Step 2: Navigate to the Desired Directory:**
+### Step 2: Navigate to the Desired Directory:
 
 Once the repository has been successfully cloned, move into the directory that contains the design files for the SPICE simulations. This folder includes various example circuits and setup files needed for running simulations. Use the following command to navigate to it:
 
@@ -68,13 +68,28 @@ cd sky130CircuitDesignWorkshop/design/
 This places you in the main working directory where you can access and modify circuit files as needed for your Sky130-based designs.
 
 
-**Step 3: Plot the (I<sub>D</sub> vs V<sub>DS</sub> at constant V<sub>GS</sub>) Characteristics Using NGSPICE:**
+### Step 3: Plot the (I<sub>D</sub> vs V<sub>DS</sub> at constant V<sub>GS</sub>) Characteristics Using NGSPICE:
 
 After navigating to the design directory, you can now simulate and visualize the transistor characteristics. In this step, you’ll generate the I<sub>D</sub> vs V<sub>DS</sub> at constant V<sub>GS</sub> using NGSPICE. The simulation file provided for this purpose is:
  
 ```
 day1_nfet_idvds_L2_W5.spice
 ```
+
+**Info about the File Being Simulated:**
+
+This SPICE file contains the circuit netlist for plotting the ID–VDS characteristics of an NMOS transistor using the Sky130 process.
+It defines transistor parameters and bias conditions required to observe how drain current (ID) varies with drain-to-source voltage (VDS) for different gate voltages (VGS).
+
+**Transistor parameters:**
+
+Channel Length (L) = 2 µm
+
+Channel Width (W) = 5 µm
+
+**Purpose:** To study the transistor’s output characteristics and identify its linear and saturation regions.
+
+**Simulation Type:** DC sweep of VDS for multiple VGS values.
 
 To run the simulation and view the waveform, execute the following commands:
 
