@@ -61,6 +61,10 @@ Once the repository has been successfully cloned, move into the directory that c
 cd sky130CircuitDesignWorkshop/design/
 ```
 
+**View The File's Contents:**
+
+Open the SPICE netlist in the vim text editor, allowing you to see transistor definitions, voltage sources, and simulation commands. You can also edit parameters if needed.
+
 <img width="1280" height="800" alt="Screenshot from 2025-10-15 19-53-53" src="https://github.com/user-attachments/assets/0116535a-154c-446c-a89a-f381c3377366" />
 
 
