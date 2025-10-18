@@ -115,4 +115,29 @@ Once NGSPICE opens, it will simulate the circuit and allow you to plot the drain
 <img width="1280" height="800" alt="Screenshot from 2025-10-15 19-59-16" src="https://github.com/user-attachments/assets/33bf8dfa-d788-4d93-a357-a6a6648b9f4d" />
 
 
+## Summary
+
+**Day 1: NMOS Output Characteristics (ID vs VDS)**
+
+**Objective:**
+
+To understand the output characteristics of an NMOS transistor using the Sky130 process.
+
+To observe how the drain current (ID) varies with drain-to-source voltage (VDS) at constant gate voltages (VGS).
+
+**Activities Performed:**
+
+Cloned the Sky130 circuit repository and navigated to the design directory.
+
+Opened the simulation file day1_nfet_idvds_L2_W5.spice using vim to inspect transistor definitions and simulation setup.
+
+Ran the SPICE simulation in NGSPICE and plotted ID vs VDS for multiple VGS values.
+
+**Key Observations and Learning Points:**
+
+Identified the linear and saturation regions of the NMOS transistor.
+
+Learned how device geometry (channel length and width) affects current levels.
+
+Gained hands-on experience with SPICE netlists, NGSPICE commands, and plotting transistor characteristics.
 
