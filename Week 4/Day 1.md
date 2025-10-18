@@ -87,9 +87,9 @@ It defines transistor parameters and bias conditions required to observe how dra
 
 **Transistor parameters:**
 
-Channel Length (L) = 2 µm
+*Channel Length (L)* = 2 µm
 
-Channel Width (W) = 5 µm
+*Channel Width (W)* = 5 µm
 
 **Purpose:** To study the transistor’s output characteristics and identify its linear and saturation regions.
 
