@@ -1,4 +1,38 @@
-# Labs On Day 4
+# CMOS Noise Margin Robustness Evaluation (Day 4)
+
+<img width="474" height="246" alt="image" src="https://github.com/user-attachments/assets/717d7dea-4ea5-4228-9792-a68338b6010e" />
+
+<img width="1210" height="734" alt="image" src="https://github.com/user-attachments/assets/1800364d-6349-4f09-a6f0-ab43996ebf7f" />
+
+<img width="1205" height="750" alt="image" src="https://github.com/user-attachments/assets/73df7289-8066-40af-8602-f6e4da40a69b" />
+
+<img width="1215" height="681" alt="image" src="https://github.com/user-attachments/assets/ccfe02ae-65ee-4ee0-b03d-2f26cebfe9d4" />
+
+<img width="1215" height="688" alt="image" src="https://github.com/user-attachments/assets/be95fa72-832c-46cd-b524-1777a75df982" />
+
+<img width="1204" height="675" alt="image" src="https://github.com/user-attachments/assets/d03e0274-1f08-452a-95e0-7a5edc871571" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Labs On Day 4
 
 ## Step 1: Navigate to the Design Directory
 
