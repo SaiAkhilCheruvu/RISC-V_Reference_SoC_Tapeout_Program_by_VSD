@@ -1,4 +1,51 @@
-# Labs On Day 3
+
+# CMOS Switching Dynamic And Threshold Simulations (Day 3)
+
+
+<img width="1217" height="581" alt="image" src="https://github.com/user-attachments/assets/1552c640-c8c9-4360-be4d-db14502adecd" />
+
+
+In a SPICE netlist, the terminals of a MOSFET are always written in the order Drain, Gate, Source, Bulk (or Substrate) — abbreviated as D, G, S, B.
+
+
+<img width="1214" height="564" alt="image" src="https://github.com/user-attachments/assets/4afd3ba2-e186-4e45-b5dc-14bc28cd50f5" />
+
+<img width="1115" height="781" alt="image" src="https://github.com/user-attachments/assets/b43d7c76-6e7e-4b14-b208-4d6b73b52ced" />
+
+<img width="1208" height="795" alt="image" src="https://github.com/user-attachments/assets/7bdb643e-742f-4881-b689-c2ac7eb81789" />
+
+<img width="1209" height="645" alt="image" src="https://github.com/user-attachments/assets/f874a4d4-1ab5-45e3-b055-17876829b096" />
+
+<img width="1207" height="672" alt="image" src="https://github.com/user-attachments/assets/342db11a-53a6-4ef2-8df5-acb2ee337df1" />
+
+<img width="1201" height="641" alt="image" src="https://github.com/user-attachments/assets/ce9d6d6a-19ab-41f0-864d-f105c17e08f4" />
+
+<img width="1202" height="576" alt="image" src="https://github.com/user-attachments/assets/27f5b63b-ba29-4d3b-9490-df96e23e49ae" />
+
+<img width="1201" height="576" alt="image" src="https://github.com/user-attachments/assets/d99350ad-17fa-40ac-9ca2-30579a066d7e" />
+
+<img width="1203" height="568" alt="image" src="https://github.com/user-attachments/assets/f8fa379e-fddf-4b8d-8583-99c64e7d124b" />
+
+<img width="943" height="331" alt="image" src="https://github.com/user-attachments/assets/42f8d4d7-3cf8-41cb-af61-104c11595a7b" />
+
+
+<img width="1203" height="666" alt="image" src="https://github.com/user-attachments/assets/d0b2f0c0-abf9-494c-9d79-7326faea03df" />
+
+<img width="1209" height="546" alt="image" src="https://github.com/user-attachments/assets/07e02522-af0f-47bb-8c9c-f4ef0425e9ee" />
+
+
+<img width="1207" height="692" alt="image" src="https://github.com/user-attachments/assets/164e3107-b1b9-4f9e-9adb-1b4759112985" />
+
+<img width="1212" height="581" alt="image" src="https://github.com/user-attachments/assets/62d3089f-6f7e-4431-a0f9-a57e2762b7cf" />
+
+<img width="1205" height="645" alt="image" src="https://github.com/user-attachments/assets/ee280a5b-7880-4658-acc5-98cffe818c68" />
+
+
+
+
+
+
+## Labs On Day 3
 
 
 ## Simulation 1 - Transient analysis
