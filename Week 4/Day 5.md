@@ -1,4 +1,37 @@
-# Labs On Day 5
+# CMOS Power Supply And Device Variation Robustness Evaluation (Day 5)
+
+<img width="1205" height="751" alt="image" src="https://github.com/user-attachments/assets/a7d6ed8f-5f14-4a4c-a0ed-c9f679b3573f" />
+
+<img width="1200" height="794" alt="image" src="https://github.com/user-attachments/assets/ef51ea9e-0bcc-45f5-9f8c-962629e1d549" />
+
+<img width="1212" height="683" alt="image" src="https://github.com/user-attachments/assets/d446c4c9-e6c4-4ccf-875e-7fc1e843f5bb" />
+
+
+<img width="1209" height="686" alt="image" src="https://github.com/user-attachments/assets/5f48472f-d9c6-4b04-80d2-10572e6a8e86" />
+
+
+<img width="1211" height="475" alt="image" src="https://github.com/user-attachments/assets/e7861c84-0da0-4463-af9e-e17596194dfb" />
+
+
+<img width="1204" height="664" alt="image" src="https://github.com/user-attachments/assets/b7b10480-1b25-4bd2-aed4-88023e0cc3c6" />
+
+<img width="1217" height="575" alt="image" src="https://github.com/user-attachments/assets/d00b8d55-ec49-43e4-82a3-c8ca13dbfa0e" />
+
+<img width="1122" height="635" alt="image" src="https://github.com/user-attachments/assets/8a88724a-a84b-492d-baf3-99b7cd6b86ee" />
+
+<img width="1204" height="689" alt="image" src="https://github.com/user-attachments/assets/2e163da7-e4b1-4bb5-a172-cf1bd663b769" />
+
+<img width="1195" height="636" alt="image" src="https://github.com/user-attachments/assets/073b98aa-aaa8-4f47-9a9e-a172e5e85140" />
+
+
+<img width="1170" height="589" alt="image" src="https://github.com/user-attachments/assets/82a73f1a-30bc-4a55-99c8-ede468032f6f" />
+
+
+
+
+
+
+## Labs On Day 5
 
 ## Simulation 1 - Inverter Device Variation
 
