@@ -61,4 +61,41 @@ read_sdc constraints.sdc
 report_checks
 report_tns
 report_wns
+```
+
+## Installation Of OpenSTA
+
+Follow the steps below to install OpenSTA:
+
+### Step 1 : Clone The Repository
+
+First, download the OpenSTA source code from its official GitHub repository and navigate into the project directory.
+
+```
+git clone https://github.com/parallaxsw/OpenSTA.git
+cd OpenSTA
+```
+
+### Step 2 : Build The Docker Image
+
+Next, create a Docker image for OpenSTA using the provided Dockerfile. This will set up the necessary environment and dependencies automatically.
+
+```
+docker build --file Dockerfile.ubuntu22.04 --tag opensta .
+```
+
+<img width="1219" height="717" alt="Screenshot from 2025-10-18 21-52-09" src="https://github.com/user-attachments/assets/ab66aa45-10ab-425b-aae4-2d5d298ec846" />
+
+
+### Step 3 : Run The OpenSTA Container
+
+Now, start a Docker container using the OpenSTA image. The -v option mounts directories from your system so you can access your data, and -i runs the container interactively.
+
+```
+docker run -i -v $HOME:/data opensta
+```
+
+Once the container starts successfully, you’ll see the % prompt—this indicates that the OpenSTA interactive shell is ready for use.
+
+
 
