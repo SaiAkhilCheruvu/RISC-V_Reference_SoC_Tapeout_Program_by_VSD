@@ -98,4 +98,82 @@ docker run -i -v $HOME:/data opensta
 Once the container starts successfully, you’ll see the % prompt—this indicates that the OpenSTA interactive shell is ready for use.
 
 
+### Step 4 : Performing Timing Analysis with Inline Commands
 
+After entering the OpenSTA shell (indicated by the % prompt), you can run basic static timing analysis using the following inline commands:
+
+```
+# Load the Liberty timing library file
+read_liberty /OpenSTA/examples/nangate45_slow.lib.gz
+
+# Load the gate-level Verilog netlist
+read_verilog /OpenSTA/examples/example1.v
+
+# Link the top-level Verilog design with the loaded Liberty cells
+link_design top
+
+# Create a 10 ns clock named 'clk' for the inputs clk1, clk2, and clk3
+create_clock -name clk -period 10 {clk1 clk2 clk3}
+
+# Define a 0 ns input delay for inputs in1 and in2 relative to clock 'clk'
+set_input_delay -clock clk 0 {in1 in2}
+
+# Generate a timing report for the design
+report_checks
+```
+
+<img width="1219" height="717" alt="Screenshot from 2025-10-18 21-53-37" src="https://github.com/user-attachments/assets/5c5d9d75-6118-4c16-8f06-33fe0d21efa5" />
+
+<img width="1219" height="717" alt="Screenshot from 2025-10-18 21-53-54" src="https://github.com/user-attachments/assets/ec1b462f-7f6c-4d5d-b056-e75bdf07cb9f" />
+
+
+#### Understanding Setup (Max Delay) Analysis
+
+The current setup represents a setup timing (maximum delay) corner, so OpenSTA focuses on setup checks by default.
+
+Why Does ```report_checks``` Show Only Max (Setup) Paths?
+
+By default, the ```report_checks``` command performs setup timing analysis, equivalent to running:
+
+```
+report_checks -path_delay max
+```
+
+This means it reports only the maximum path delays, which correspond to setup checks.
+
+To view only hold checks (minimum path delays), run:
+
+```
+report_checks -path_delay min
+```
+
+If you want to include both setup and hold timing checks, use:
+
+```
+report_checks -path_delay min_max
+```
+
+
+<img width="1219" height="679" alt="Screenshot from 2025-10-18 21-54-39" src="https://github.com/user-attachments/assets/8082b658-93f7-4532-bfb4-2942eaf254b8" />
+
+
+<img width="1219" height="701" alt="Screenshot from 2025-10-18 21-54-48" src="https://github.com/user-attachments/assets/032b5937-53e9-494a-8738-2d3797312314" />
+
+
+Navigate to:
+
+```
+/OpenSTA/examples
+```
+
+
+
+
+### Analysing Report Outcomes
+
+
+The analysis is performed on the Verilog netlist file ```example1.v``` :
+
+
+
+<img width="865" height="335" alt="Screenshot from 2025-10-20 13-24-17" src="https://github.com/user-attachments/assets/070bfa4f-b2f6-4030-9012-617b518ff396" />
