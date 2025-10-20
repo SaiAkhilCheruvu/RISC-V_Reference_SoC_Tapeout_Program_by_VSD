@@ -225,14 +225,15 @@ This Verilog code defines a module where the output y is assigned the value of i
 #### Simulation Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-22-28" src="https://github.com/user-attachments/assets/31d12aa4-eeb4-4758-a552-803d24829b5a" />
+<img width="1280" height="758" alt="1" src="https://github.com/user-attachments/assets/c7dc5c2d-2e4c-41a6-ab2f-45d75e03d1d0" />
+
 
 
 
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-09-41" src="https://github.com/user-attachments/assets/c807546a-2ce1-4d4f-970b-d5b1ac6815c6" />
+<img width="1280" height="750" alt="2" src="https://github.com/user-attachments/assets/dfb62cec-d471-4c50-bc4e-87fbb98bd9ac" />
 
 
 
@@ -255,7 +256,8 @@ This Verilog module uses an always @(*) block to model combinational logic with 
 #### Simulation Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-28-08" src="https://github.com/user-attachments/assets/b47e065a-fe9c-448e-b23e-1fb65a75e686" />
+<img width="1280" height="754" alt="3" src="https://github.com/user-attachments/assets/5d4c9178-ea49-4f13-b584-016605c65572" />
+
 
 
 
@@ -263,7 +265,8 @@ This Verilog module uses an always @(*) block to model combinational logic with 
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-11-07" src="https://github.com/user-attachments/assets/c69ae54f-c814-4184-a73f-d6998b35bbb9" />
+<img width="1280" height="770" alt="4" src="https://github.com/user-attachments/assets/ab6f0db2-8049-4d7e-a112-1ceb94aa2dff" />
+
 
 
 ## Labs For Case Statements
@@ -290,13 +293,15 @@ This Verilog module "incomp_case" uses a case statement inside an always @(*) bl
 
 #### Simulation Results:
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-32-45" src="https://github.com/user-attachments/assets/2d231151-4440-42e1-a083-2079941d2abe" />
+<img width="1280" height="758" alt="5" src="https://github.com/user-attachments/assets/62e43c99-6c88-44c2-bd0b-1f7561681048" />
+
 
 
 
 #### Synthesis Results:
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-19-08" src="https://github.com/user-attachments/assets/58583120-3522-4236-abd7-32152609ba8f" />
+<img width="1280" height="770" alt="6" src="https://github.com/user-attachments/assets/cde2c7fe-48e5-417b-98d5-2ed6b6afe76c" />
+
 
 
 
@@ -320,13 +325,15 @@ The code uses a case statement inside an always block to select the output based
 #### Simulation Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-31-38" src="https://github.com/user-attachments/assets/72ee0821-20df-4b15-85dd-f7f53c70f8f0" />
+<img width="1280" height="758" alt="7" src="https://github.com/user-attachments/assets/6dda089c-3bb8-44ea-9002-27e122f7796b" />
+
 
 
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-16-04" src="https://github.com/user-attachments/assets/73f8ac48-1911-4f03-8a36-943a1d808074" />
+<img width="1280" height="766" alt="8" src="https://github.com/user-attachments/assets/fc7dd742-759f-4ad1-99d7-a4b3cb1844d6" />
+
 
 
 
@@ -355,14 +362,16 @@ The code uses a case statement with a wildcard pattern (?) in one case item, all
 #### Simulation Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-33-51" src="https://github.com/user-attachments/assets/f0751a6a-be43-4675-943c-8c66fd8a9efa" />
+<img width="1280" height="758" alt="9" src="https://github.com/user-attachments/assets/a5195458-47ab-444e-947d-6dc8ad1a7fb0" />
+
 
 
 
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-16-59" src="https://github.com/user-attachments/assets/c227a06f-e62b-4525-bf9e-5c2263afeb42" />
+<img width="1280" height="766" alt="10" src="https://github.com/user-attachments/assets/6eb55ca3-fd24-46b1-8d4b-5138f3093cdd" />
+
 
 
 
@@ -397,7 +406,7 @@ The code uses a case statement inside an always block to assign values to two ou
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-18-11" src="https://github.com/user-attachments/assets/4d3deaa8-0c6e-4404-856f-7fdd62a52d5c" />
+<img width="1280" height="770" alt="11" src="https://github.com/user-attachments/assets/79528b6a-502f-4707-9330-b52907b565ab" />
 
 
 
@@ -435,7 +444,7 @@ This code implements a 4-to-1 multiplexer using a generate-like approach with a 
 #### Simulation Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-53-44" src="https://github.com/user-attachments/assets/339e4e89-f5df-437d-a389-01c339eda781" />
+<img width="1280" height="762" alt="12" src="https://github.com/user-attachments/assets/ab2961d0-1278-46dc-a7cf-5a1ab160d046" />
 
 
 
@@ -443,7 +452,8 @@ This code implements a 4-to-1 multiplexer using a generate-like approach with a 
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-20-04" src="https://github.com/user-attachments/assets/68b87567-3903-44b3-8f3d-2729a50880c1" />
+<img width="1280" height="770" alt="13" src="https://github.com/user-attachments/assets/4de290b0-076c-472a-8d2c-c0016ba4d997" />
+
 
 
 
@@ -481,7 +491,8 @@ This code implements an 8-output demultiplexer. The 3-bit selector sel chooses w
 #### Simulation Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-56-24" src="https://github.com/user-attachments/assets/3143b4f8-0dfc-4193-a989-613c49622067" />
+<img width="1280" height="770" alt="14" src="https://github.com/user-attachments/assets/68760334-b364-4187-9675-73bbdae449b9" />
+
 
 
 
@@ -490,7 +501,8 @@ This code implements an 8-output demultiplexer. The 3-bit selector sel chooses w
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-21-02" src="https://github.com/user-attachments/assets/fe91431d-c1be-4911-80be-b1cf4f2312aa" />
+<img width="1280" height="770" alt="15" src="https://github.com/user-attachments/assets/80f4832e-b9f1-48e7-9cdf-72c22d2584b4" />
+
 
 
 
@@ -522,7 +534,7 @@ This code implements an 8-output demultiplexer using a for-loop inside an always
 
 #### Simulation Results:
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 16-58-19" src="https://github.com/user-attachments/assets/aff1d891-adf2-4b93-ab0e-fdede62790a5" />
+<img width="1280" height="758" alt="16" src="https://github.com/user-attachments/assets/ab53d28d-4407-4a47-b1c0-5f0d03412c90" />
 
 
 
@@ -532,7 +544,8 @@ This code implements an 8-output demultiplexer using a for-loop inside an always
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-22-58" src="https://github.com/user-attachments/assets/3ef79ddc-64f9-4839-94e6-68285689afe6" />
+<img width="1280" height="762" alt="17" src="https://github.com/user-attachments/assets/df2efcc7-e903-4489-9ed2-4e4341abf9f3" />
+
 
 
 
@@ -552,7 +565,8 @@ This code describes a full adder using continuous assignment. It adds three sing
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-26-01" src="https://github.com/user-attachments/assets/0cf66eba-d83f-4844-a0e8-3799ee014313" />
+<img width="1280" height="766" alt="18" src="https://github.com/user-attachments/assets/3cc56b32-72af-4a6d-8877-b735445ee45a" />
+
 
 
 ### What Is A Ripple Carry Adder (RCA)?
@@ -594,7 +608,7 @@ This code implements an 8-bit ripple carry adder using full adders. It adds two 
 
 #### Simulation Results:
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-00-34" src="https://github.com/user-attachments/assets/c5536d21-2344-407b-b508-0ab449f53a2a" />
+<img width="1280" height="758" alt="19" src="https://github.com/user-attachments/assets/118deb80-8c37-4f49-a689-d62434bc07f9" />
 
 
 
@@ -603,7 +617,8 @@ This code implements an 8-bit ripple carry adder using full adders. It adds two 
 #### Synthesis Results:
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 17-43-00" src="https://github.com/user-attachments/assets/22f9a5ff-df63-4118-9733-8812befb47fa" />
+<img width="1280" height="766" alt="20" src="https://github.com/user-attachments/assets/be995673-c941-4d33-bcea-44eff057a5b1" />
+
 
 
 
