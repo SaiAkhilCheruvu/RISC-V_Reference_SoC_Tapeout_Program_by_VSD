@@ -185,7 +185,8 @@ gtkwave tb_dff_asyncres.vcd
 ```
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-02 21-55-22" src="https://github.com/user-attachments/assets/9444824c-a4fe-4787-b45b-1b4eb06cc58b" />
+<img width="1280" height="770" alt="1" src="https://github.com/user-attachments/assets/1de00d73-a1b2-456c-990c-eea38c391d95" />
+
 
 
 
@@ -202,7 +203,8 @@ show
 ```
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-26-42" src="https://github.com/user-attachments/assets/a86c79c2-2075-43e2-ac9d-df520671ffba" />
+<img width="1280" height="747" alt="2" src="https://github.com/user-attachments/assets/347bce7c-6228-40c6-a020-aa654883d2f5" />
+
 
 
 
@@ -220,7 +222,8 @@ iverilog dff_async_set.v tb_dff_async_set.v
 gtkwave tb_dff_async_set.vcd
 ```
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-02 21-58-51" src="https://github.com/user-attachments/assets/7728e53d-8273-4b1e-96c9-cca816254542" />
+<img width="1280" height="766" alt="3" src="https://github.com/user-attachments/assets/341efe21-a1d6-4f62-bf74-650304f2404c" />
+
 
 
 
@@ -237,7 +240,7 @@ show
 ```
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-28-36" src="https://github.com/user-attachments/assets/29224f02-b6d0-4d81-9e36-e65ae30d416a" />
+<img width="1280" height="750" alt="4" src="https://github.com/user-attachments/assets/7ac2d25c-08c1-4a92-8acf-7352fc754400" />
 
 
 
@@ -254,7 +257,8 @@ gtkwave tb_dff_syncres.vcd
 ```
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-01-35" src="https://github.com/user-attachments/assets/c3e5b073-c682-4336-b028-c2589b909dd7" />
+<img width="1280" height="766" alt="5" src="https://github.com/user-attachments/assets/1c1224d9-a31e-4e70-ba6b-070115169d25" />
+
 
 
 
@@ -272,7 +276,7 @@ show
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-02 22-29-59" src="https://github.com/user-attachments/assets/2b68f2f5-2bc0-42ea-a7b9-cfdd1f79e5c6" />
+<img width="1280" height="747" alt="6" src="https://github.com/user-attachments/assets/3c2ab06c-2f56-4ec8-80a8-36aaec2554df" />
 
 
 
