@@ -1,5 +1,71 @@
+# Velocity Saturation And Basics Of CMOS Inverter VTC (Day 2)
 
-# Labs On Day2
+**Why CMOS is Called “Complementary Metal–Oxide–Semiconductor”**
+
+The name CMOS describes both the structure and operation of the technology:
+
+- **Complementary** – It uses both NMOS and PMOS transistors in pairs that work in opposite (complementary) ways. When one conducts, the other is off, greatly reducing power consumption.
+
+- **Metal** – The gate electrode was originally made of metal (now often polysilicon or metal again in modern processes).
+
+- **Oxide** – A thin silicon dioxide (SiO₂) layer insulates the gate from the underlying semiconductor, allowing voltage control without direct current flow.
+
+- **Semiconductor** – The base material is silicon, a semiconductor that forms the transistor body through doping.
+
+
+![WhatsApp Image 2025-10-20 at 10 15 22_de2bba27](https://github.com/user-attachments/assets/ca075a3c-2da9-4cb5-af04-130a91c6fd2a)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 22_599b91c5](https://github.com/user-attachments/assets/af372681-33a5-4209-a9ba-31eec12d202d)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 22_c84b48d7](https://github.com/user-attachments/assets/aaae496d-21cf-4e85-a867-3b1ce120e4d3)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 22_1ab1ca6a](https://github.com/user-attachments/assets/64b2bc8b-9039-4ef0-93d8-061434a80344)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 23_404270a3](https://github.com/user-attachments/assets/88827c27-7e9f-450d-8785-cf36af1a7581)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 23_49ad52d8](https://github.com/user-attachments/assets/14f295ce-9f81-4134-9904-29626760a0e5)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 23_1c496901](https://github.com/user-attachments/assets/b0af3d81-1a3e-449c-a98d-6ff3ff002f31)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 24_a5b324bc](https://github.com/user-attachments/assets/1e3449ba-8b22-488d-bcb1-e5df3c4ece2b)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 24_ebe5d16b](https://github.com/user-attachments/assets/f5051933-d427-494c-a19c-1c03840235b0)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 25_094f4f7c](https://github.com/user-attachments/assets/ef5665a9-6448-42b3-9a56-008c6772bad2)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 25_9fd99e2f](https://github.com/user-attachments/assets/d4448e50-d6f7-413b-af51-a3b91021493b)
+
+
+![WhatsApp Image 2025-10-20 at 10 15 25_7672ee65](https://github.com/user-attachments/assets/2894a2cb-2c23-47e0-88c8-65a415b31191)
+
+
+
+![WhatsApp Image 2025-10-20 at 10 15 25_88a6d021](https://github.com/user-attachments/assets/a8b9f655-48f8-453a-b4af-5b7385e40d6d)
+
+
+![WhatsApp Image 2025-10-20 at 10 16 29_271118f9](https://github.com/user-attachments/assets/73cce58a-5746-43f6-a8ba-d5fe29446639)
+
+
+![WhatsApp Image 2025-10-20 at 10 16 33_f819094e](https://github.com/user-attachments/assets/5e172e93-837f-4696-bf39-0e61b85378d5)
+
+
+![WhatsApp Image 2025-10-20 at 10 16 43_f0f276b3](https://github.com/user-attachments/assets/25e061ad-3684-436f-90dd-f018bdf81704)
+
+
+![WhatsApp Image 2025-10-20 at 10 16 49_810bb5e6](https://github.com/user-attachments/assets/ecc05840-e5b9-4ca2-a8c5-4849eb3c5499)
+
+
+## LABS ON DAY 2
 
 ## Day 1 – Simulation 1: ID vs VDS at Constant VGS
 
