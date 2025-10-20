@@ -122,7 +122,8 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 17-53-12" src="https://github.com/user-attachments/assets/98cd9a75-885b-481d-bfa1-92d1254402b7" />
+<img width="1280" height="758" alt="1" src="https://github.com/user-attachments/assets/5f375c3b-9a0f-4a7a-a96a-30535f209b91" />
+
 
 
 #### Simulation Of Ternary Operator Multiplexer:
@@ -135,7 +136,8 @@ gtkwave tb_ternary_operator_mux.vcd
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 17-48-50" src="https://github.com/user-attachments/assets/b711dcb7-0b1c-4b75-8460-1497e9ba4951" />
+<img width="1280" height="754" alt="2" src="https://github.com/user-attachments/assets/65b9e082-5f17-4a42-a973-999f47b83a10" />
+
 
 
 Use the following command run a gate-level simulation (GLS):
@@ -150,7 +152,7 @@ gtkwave tb_ternary_operator_mux.vcd
 
 #### GLS Of Ternary Operator Multiplexer:
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 21-16-50" src="https://github.com/user-attachments/assets/62ae85f2-f3d8-4eca-806a-32af4d847585" />
+<img width="1280" height="762" alt="3" src="https://github.com/user-attachments/assets/191d989d-672d-4843-a7c2-d97620660673" />
 
 
 
@@ -183,7 +185,8 @@ show
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-21-46" src="https://github.com/user-attachments/assets/d1fa143c-a05a-466e-8b26-5fdcd2906f58" />
+<img width="1280" height="762" alt="4" src="https://github.com/user-attachments/assets/09b7b6e6-dffb-4d27-b540-0e234132f0c3" />
+
 
 
 #### Simulation Of Bad Multiplexer:
@@ -196,7 +199,7 @@ gtkwave tb_bad_mux.vcd
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-42-22" src="https://github.com/user-attachments/assets/f20fe3bc-c50a-4253-8946-a1c41055b951" />
+<img width="1280" height="762" alt="5" src="https://github.com/user-attachments/assets/f4805a72-7a52-4e36-80c3-71d058ca7a16" />
 
 
 #### GLS Of Bad Multiplexer:
@@ -209,7 +212,8 @@ gtkwave tb_bad_mux.vcd
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 21-19-41" src="https://github.com/user-attachments/assets/fe12afe8-990b-4a8b-ae10-2583f99e9b04" />
+<img width="1280" height="770" alt="6" src="https://github.com/user-attachments/assets/c422e576-2887-430a-88ec-861b0691ff89" />
+
 
 
 
@@ -241,7 +245,8 @@ show
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-22-25" src="https://github.com/user-attachments/assets/a314052c-1b9a-4da9-980c-47ed58973979" />
+<img width="1280" height="766" alt="7" src="https://github.com/user-attachments/assets/d7448b33-392e-4d0f-91d9-55b34b5ab08a" />
+
 
 #### Simulation Of Blocking Caveat:
 
@@ -253,7 +258,7 @@ gtkwave tb_blocking_caveat.vcd
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-09-28 18-43-13" src="https://github.com/user-attachments/assets/2f62df62-8ded-42ee-9b08-ac092090e8ab" />
+<img width="1280" height="766" alt="8" src="https://github.com/user-attachments/assets/b0a679ba-9891-4fc4-ba0c-ab2f852142c9" />
 
 
 #### GLS Of Blocking Caveat:
@@ -266,7 +271,8 @@ gtkwave tb_blocking_caveat.vcd
 
 
 
-<img width="1280" height="800" alt="Screenshot from 2025-10-03 21-23-07" src="https://github.com/user-attachments/assets/56eadc8d-0081-495c-9452-d39c85506d0d" />
+<img width="1280" height="758" alt="9" src="https://github.com/user-attachments/assets/2f373f83-ab07-499c-8ec4-2f7d434ee128" />
+
 
 
 
